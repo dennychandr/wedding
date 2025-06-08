@@ -1,11 +1,19 @@
 <?php
 
+use App\Http\Controllers\Front\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('fe.index');
+
+// Route::get('/', function () {
+//     return view('fe.index');
+// });
+
+Route::get('/test', function () {
+    return view('fe.test');
 });
+
+Route::get('/{id?}', [HomeController::class, 'index'])->name('home.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
