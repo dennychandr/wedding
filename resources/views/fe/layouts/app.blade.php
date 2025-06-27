@@ -50,6 +50,7 @@
     <!-- ==================================== -->
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- ==================================== -->
     <!-- ✅ Custom CSS -->
     <!-- ==================================== -->
@@ -70,15 +71,12 @@
         }
 
         .parallax-section {
-            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+            background-image: url('/assets/img/mansory/4.jpg');
             background-attachment: fixed;
             background-size: cover;
-            background-position: center;
-            height: 300px;
+            background-position: 50% 70%;
+            height: 200vh;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
     </style>
 
@@ -92,6 +90,12 @@
 
     <link href="{{ asset('') }}assets/css/custom.css" rel="stylesheet">
     <link href="{{ asset('') }}assets/css/test.css" rel="stylesheet">
+    <!-- Animate on Scroll CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons (optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
     {{-- <!-- CSS for this page only --> --}}
     @stack('css')
     {{-- <!-- End CSS  --> --}}
