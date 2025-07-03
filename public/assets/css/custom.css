@@ -3,6 +3,26 @@ body{
     text-align: center;
 }
 
+.masonry {
+    columns: 4;
+    column-gap: 0.5rem;
+}
+
+.masonry img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.parallax-section {
+    background-image: url('/assets/img/mansory/4.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 70%;
+    height: 200vh;
+    color: white;
+}
+
 /* SECTION 1 */
 .section1 .full-screen-image {
   position: relative;
