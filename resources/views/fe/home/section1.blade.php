@@ -2,15 +2,15 @@
 <div class="section1">
     <div class="full-screen-image">
         <picture>
-            <source srcset="{{ asset('') }}assets/img/appointment/1.png" media="(max-width: 768px)">
-            <img src="{{ asset('') }}assets/img/denny/banner.jpg" alt="Full Image" class="background-img" />
+            <source srcset="{{ asset('') }}assets/img/section1/1.jpg" media="(max-width: 768px)">
+            <img src="{{ asset('') }}assets/img/section1/1.jpg" alt="Full Image" class="background-img" />
         </picture>
         <div class="centered-text">
-            The Wedding Of
-            <br>
-            Denny & Fisia
-            <br>
-            02 August 2025
+            <div class="text-container">
+                <p class="text-1">The Wedding Of</p>
+                <p class="text-2">Denny & Fisia</p>
+                <p class="text-3">02.08.25</p>
+            </div>
         </div>
     </div>
 </div>

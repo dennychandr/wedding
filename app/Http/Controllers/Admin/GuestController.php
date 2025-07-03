@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\DataTables\GuestDataTable;
 use App\Http\Controllers\Controller;
+use App\Models\GuestMessage;
 use Illuminate\Http\Request;
 
 class GuestController extends Controller
@@ -10,9 +12,9 @@ class GuestController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(GuestDataTable $dataTable)
     {
-        return view('be.admin.master.guest.index', []);
+        return $dataTable->render('be.admin.master.guest.index', []);
     }
 
     /**
@@ -20,16 +22,13 @@ class GuestController extends Controller
      */
     public function create()
     {
-        //
+        return view('be.admin.master.guest.form', []);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
-    {
-        //
-    }
+    public function store(Request $request) {}
 
     /**
      * Display the specified resource.

@@ -24,19 +24,15 @@
             </div>
         </div>
         <div class="row mx-5">
-            <div class="mt-5 col-12 rounded" style="height: 500px; background-color: rgba(0, 0, 0, 0.7);">
+            <div class="mt-5 col-12 rounded" style=" background-color: rgba(0, 0, 0, 0.7);">
                 <div class="row d-flex align-items-center h-100">
                     <div class="col-6 px-5">
-                        Holy Matrimony
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque corporis consequatur ad! Rerum
-                        laborum optio aliquid veritatis esse dolorum repudiandae harum modi. Quis non possimus amet
-                        tempore vel fuga facere reprehenderit eaque maxime hic quas sint molestiae blanditiis explicabo
-                        voluptate qui laboriosam incidunt nulla rerum obcaecati facilis voluptas, at illo aut! Debitis
-                        rem odit quis molestiae aspernatur dolores commodi, veniam deserunt minima ut quibusdam harum,
-                        voluptatem explicabo fugiat ad qui hic dolore! Iure quos ab debitis dolorum, corporis quasi. At
-                        aut alias labore. A exercitationem deleniti voluptas, rem ad sint quibusdam pariatur obcaecati
-                        consectetur velit nam quam commodi ratione corrupti?
+                        <h1 class="section6-text-h1">Holy Matrimony</h1>
+                        <h2 class="section6-text-h2">Sabtu, 2 Agustus 2025</h2>
+                        <p>PUKUL: 15:00 WITA</p>
+                        <p>PHALOSA VILLA</p>
+                        <p>Jl. Batu Belig, Gang Phalosa No.8, Bali</p>
+                        <button type="button" class="btn btn-primary rounded-pill border-white">Google Maps</button>
                     </div>
                     <div class="col-6">
                         <img src="{{ asset('') }}assets/img/mansory/7.jpg" alt=""
@@ -53,16 +49,12 @@
                             class="w-50 h-50 object-fit-cover rounded">
                     </div>
                     <div class="col-6 px-3">
-                        Reception Dinner
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque corporis consequatur ad! Rerum
-                        laborum optio aliquid veritatis esse dolorum repudiandae harum modi. Quis non possimus amet
-                        tempore vel fuga facere reprehenderit eaque maxime hic quas sint molestiae blanditiis explicabo
-                        voluptate qui laboriosam incidunt nulla rerum obcaecati facilis voluptas, at illo aut! Debitis
-                        rem odit quis molestiae aspernatur dolores commodi, veniam deserunt minima ut quibusdam harum,
-                        voluptatem explicabo fugiat ad qui hic dolore! Iure quos ab debitis dolorum, corporis quasi. At
-                        aut alias labore. A exercitationem deleniti voluptas, rem ad sint quibusdam pariatur obcaecati
-                        consectetur velit nam quam commodi ratione corrupti?
+                        <h1>Reception Dinner</h1>
+                        <h2>Sabtu, 2 Agustus 2025</h2>
+                        <p>PUKUL: 15:00 WITA</p>
+                        <p>PHALOSA VILLA</p>
+                        <p>Jl. Batu Belig, Gang Phalosa No.8, Bali</p>
+                        <button type="button" class="btn btn-primary">Google Maps</button>
                     </div>
                 </div>
             </div>

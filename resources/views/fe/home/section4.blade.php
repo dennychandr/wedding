@@ -29,6 +29,7 @@
             <img src="{{ asset('') }}assets/img/mansory/8.jpg" alt="">
         </a>
     </div>
+
 </div>
 
 @push('js')

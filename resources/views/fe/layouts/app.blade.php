@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     {{-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> --}}
     {{-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> --}}
     {{-- <meta name="csrf-token" content="{{ csrf_token() }}">  --}}
     {{-- menambahkan csrf token di meta agar dapat digunakan pada ajax post --}}
-    {{-- <link rel="shortcut icon" href="{{ asset('') }}assets/img/icons/icon-48x48.png" /> --}}
+    <link rel="shortcut icon" href="{{ asset('') }}assets/img/logo.png" />
 
     <title>Denny & Fisia Nikahh</title>
 
@@ -89,7 +90,9 @@
     {{-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> --}}
 
     <link href="{{ asset('') }}assets/css/custom.css" rel="stylesheet">
-    <link href="{{ asset('') }}assets/css/test.css" rel="stylesheet">
+    <link href="{{ asset('') }}assets/css/custom_phone.css" rel="stylesheet">
+    <link href="{{ asset('') }}assets/css/custom_animation.css" rel="stylesheet">
+    @include('fe.layouts.fonts')
     <!-- Animate on Scroll CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 

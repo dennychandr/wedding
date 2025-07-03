@@ -27,5 +27,6 @@ Route::middleware('auth')->group(function () {
     // Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
+Route::post('/simpan_pesan', [HomeController::class, 'simpan_pesan'])->name('home.simpan_pesan');
+Route::post('/simpan_status', [HomeController::class, 'simpan_status'])->name('home.simpan_status');
 Route::get('/{id?}', [HomeController::class, 'index'])->name('home.index');

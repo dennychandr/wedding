@@ -1,0 +1,75 @@
+@media (max-width: 768px) {
+  .section1 .background-img {
+    object-position: 80% 20%;
+    object-position: center bottom;
+  }
+
+  .section1 .centered-text {
+    top: 43%;
+  }
+
+  .section1 .text-container .text-1 {
+    font-size: 1rem;
+  }
+  
+  .section1 .text-container .text-2 {
+    font-size: 3.3rem; 
+  }
+  
+  .section1 .text-container .text-3 {
+    font-size: 0.8rem;
+  }
+
+  .section2 .aside__text {
+    position: sticky;
+    top: 87vh;
+    margin: 0;
+  }
+  .section2 .aside {
+    padding-left: 30px;
+    font-size: 1.5rem;
+  }
+
+  .section2 .last__text{
+    font-size: 2.5rem;
+  }
+
+
+  .section5 .section5-text1{
+    font-size: 24px;
+    white-space: nowrap;
+  }
+
+  .section5 .section5-text2{
+  width: 75%;
+  font-size: 18px;
+  }
+
+  .section5 .section5-text3{
+    font-size: 8px;
+  }
+
+  .section5 .section5-text-middle{
+    font-size: 40px;
+  }
+
+  .section5 .first-row{
+    margin : 20vh 0;
+  }
+  .section5 .logo{
+    width: 50%;
+  }
+
+  .section5 .personal-photo{
+    border-radius: 10px;
+    width: 90%;
+    object-fit: cover;
+  }
+
+  .section5 .personal-card{
+    margin: 100px 0;
+  }
+
+  .mobile-only { display: block; }
+  .desktop-only { display: none; }
+}

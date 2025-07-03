@@ -1,34 +1,115 @@
-<div class="section5">
-    <div class="mx-5">
-        <div class="row">
-            <div class="col-6 d-flex flex-column align-items-center justify-content-center text-center"
-                style="height: 500px;">
-                <img src="{{ asset('') }}assets/img/logo.png" alt="Logo" class="mb-3 w-25">
-                <div>
-                    "I HAVE FOUND THE ONE WHOM MY SOUL LOVES."<br>
-                    --- (Song of Solomon 3:4) ---
-                </div>
+<div class="section5 mt-3">
+    <div class="row first-row mx-3">
+        <div class="col-6 d-flex flex-column align-items-center justify-content-center text-center">
+            <img src="{{ asset('') }}assets/img/logo.png" alt="Logo" class="mb-3 logo">
+            <div class="section5-text1">
+                "I Have Found the One <br> Whom my Soul Loves."
             </div>
-            <div class="col-6 d-flex align-items-center justify-content-center rounded" style="height: 500px;">
-                <img src="{{ asset('') }}assets/img/mansory/2.jpg" alt=""
-                    class="w-100 h-100 object-fit-cover rounded">
+            <br>
+            <div class="section5-text3">
+                --- (Song of Solomon 3:4) ---
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-6 d-flex flex-column align-items-center justify-content-center text-center">
-                <img src="{{ asset('') }}assets/img/mansory/3.jpg" alt=""
-                    class="w-50 h-50 object-fit-cover rounded">
-                <div>
-                    DENNY CHANDRA WIJAYA<br>
-                    The son of ...
+        <div class="col-6 d-flex align-items-center justify-content-center rounded">
+            <img src="{{ asset('') }}assets/img/mansory/2.jpg" alt=""
+                class="w-100 h-100 object-fit-cover rounded imgg">
+        </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center">
+        <div class="section5-text2 ">
+            By the grace and blessing of our Lord Jesus Christ, warmly invite you to witness the holy union
+            of their children,
+
+        </div>
+    </div>
+
+    <div class="desktop-only">
+        <div class="row mt-3">
+            <div class="col-5 d-flex flex-column align-items-center  text-center">
+                <img src="{{ asset('') }}assets/img/mansory/3.jpg" alt="" class="personal-photo">
+            </div>
+            <div class="col-2 d-flex justify-content-center align-items-center text-center">
+                <div class="section5-text-middle">
+                    Denny <br> & <br> Fisia
                 </div>
             </div>
-            <div class="col-6 d-flex flex-column  align-items-center justify-content-center" style="height: 500px;">
-                <img src="{{ asset('') }}assets/img/mansory/7.jpg" alt=""
-                    class="w-50 h-50 object-fit-cover rounded">
-                <div>
-                    FISIA NITI ATMADJA<br>
-                    The daughter of ...
+            <div class="col-5 d-flex flex-column  align-items-center">
+                <img src="{{ asset('') }}assets/img/mansory/7.jpg" alt="" class="personal-photo">
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-5 d-flex flex-column align-items-center  text-center">
+                <div class="section5-text-fullname">
+                    DENNY CHANDRA WIJAYA
+                </div>
+                <div class="section5-text-childof mt-4">
+                    The Son of
+                </div>
+                <div class="section5-text-parents">
+                    Mr. Jimmy Chandra Wijaya
+                    <br>
+                    Mrs. Lidia Setiawati
+                </div>
+            </div>
+            <div class="col-2 d-flex justify-content-center align-items-center text-center">
+            </div>
+            <div class="col-5 d-flex flex-column  align-items-center">
+                <div class="section5-text-fullname">
+                    FISIA NITI ATMADJA
+                </div>
+                <div class="section5-text-childof mt-4">
+                    The Daughter of
+                </div>
+                <div class="section5-text-parents">
+                    (†) Mr. Surahardjo Niti Atmadja
+                    <br>
+                    Mrs. Linda Murni
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-only">
+        <div class="row personal-card">
+            <div class="col-12">
+                <img src="{{ asset('') }}assets/img/mansory/3.jpg" alt="" class="personal-photo">
+
+                <div class="section5-text-middle mt-3">
+                    Denny
+                </div>
+
+                <div class="section5-text-fullname">
+                    DENNY CHANDRA WIJAYA
+                </div>
+                <div class="section5-text-childof mt-4">
+                    The Son of
+                </div>
+                <div class="section5-text-parents">
+                    Mr. Jimmy Chandra Wijaya
+                    <br>
+                    Mrs. Lidia Setiawati
+                </div>
+            </div>
+        </div>
+        <div class="row personal-card">
+            <div class="col-12">
+                <img src="{{ asset('') }}assets/img/mansory/7.jpg" alt="" class="personal-photo">
+
+                <div class="section5-text-middle">
+                    Fisia
+                </div>
+                <div class="section5-text-fullname">
+                    FISIA NITI ATMADJA
+                </div>
+                <div class="section5-text-childof mt-4">
+                    The Daughter of
+                </div>
+                <div class="section5-text-parents">
+                    (†) Mr. Surahardjo Niti Atmadja
+                    <br>
+                    Mrs. Linda Murni
                 </div>
             </div>
         </div>
