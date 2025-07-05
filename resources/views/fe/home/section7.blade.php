@@ -1,9 +1,10 @@
-<div class="section7 my-5">
-    <div class="card py-5">
-        <h2 class="title mb-5">Drop Your Sweet Wishes Here!</h2>
+<div class="section7">
+    <div class="card card-outer">
         <div class="container">
             <div class="wish-section">
                 <div class="form-section p-3">
+                    <h2 class="title">Drop Your Sweet Wishes Here!</h2>
+                    <h3>You can send more than one wish</h3>
                     <ul class="no-bullet">
                         <form id="guest-form">
                             @csrf
@@ -30,7 +31,7 @@
                 </div>
             </div>
             <div class="wish-section mt-3">
-                <h2 class="title my-3">Your Kind Wishes</h2>
+                <h2 class="title mt-3">Your Kind Wishes</h2>
                 <ul class="cards" id="guest-messages">
                     @foreach ($guestMessages as $guestMessage)
                         <li>
@@ -63,7 +64,6 @@
 
 @push('js')
     <script src="{{ asset('') }}assets/be/vendor/jquery/dist/jquery.min.js"></script>
-
     <script>
         $('#guest-form').on('submit', function(e) {
             e.preventDefault();
@@ -92,7 +92,7 @@
                                         <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
                                         <div class="card__header-text">
                                             <h3 class="card__title text-start">${response.nama} </h3>
-                                            <span class="card__status">3 hours ago</span>
+                                            <span class="card__status">a few seconds ago</span>
                                         </div>
                                     </div>
                                 </div>

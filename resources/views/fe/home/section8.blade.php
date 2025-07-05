@@ -1,66 +1,64 @@
-<div class="section7 my-5">
-    <div class="container bg-secondary">
-        <div class="row mb-3 p-3">
-            <div class="col-6">
+<div class="section8 desktop-only">
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="{{ asset('') }}assets/img/background/4.png" alt="">
+        </div>
+        <div class="col-lg-6">
+            <img src="{{ asset('') }}assets/img/background/4.png" alt="">
+        </div>
+    </div>
+    <div class="row h-0">
+        <div class="box">
+            <img src="{{ asset('') }}assets/img/section8/1.png" alt="" class="bunga1">
+            <img src="{{ asset('') }}assets/img/section8/1.png" alt="" class="bunga2">
+            <img src="{{ asset('') }}assets/img/section8/2.png" alt="" class="couple">
+            <div class="layer">
                 <div>
                     <h1>RSVP</h1>
+                    <h5>Please help us prepare everything better by confirming your attendance at our real wedding event
+                        with the following RSVP form:</h5>
                 </div>
-                <form id="rsvp-form">
+                <form id="rsvp-form" class="card-form">
                     @csrf
                     <input type="hidden" name="guest_id" value="{{ $guest->id }}">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" style="width: 150px;">Nama</span>
-                        <input type="text" class="form-control" name="nama" placeholder="Nama"
-                            value="{{ $guest->nama }}" readonly>
+
+                    <div class="input">
+                        <input type="text" class="input-field" name="nama" value="{{ $guest->nama }}" readonly />
+                        <label class="input-label">Nama</label>
                     </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" style="width: 150px;">Jumlah Pax</span>
-                        <input type="text" class="form-control" name="jumlah_pax" placeholder="Jumlah Pax"
-                            value="{{ $guest->jumlah_pax }}" readonly>
+
+                    <div class="input">
+                        <input type="text" class="input-field" name="jumlah_pax" value="{{ $guest->jumlah_pax }}"
+                            readonly />
+                        <label class="input-label">Jumlah Pax</label>
                     </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" style="width: 150px;">Status</span>
-                        <input type="text"
-                            class="form-control text-white
-                            @if ($guest->status == 'Hadir') bg-success
-                            @elseif ($guest->status == 'Tidak Hadir') bg-danger 
-                            @else bg-secondary @endif
-                        "
-                            name="status" placeholder="Status" value="{{ $guest->status }}" readonly>
+
+                    <div class="input">
+                        <input type="text" class="input-field" name="status" value="{{ $guest->status }}"
+                            readonly />
+                        <label class="input-label">Status</label>
                     </div>
-                    <div class="card mb-3">
-                        <div class="card-header">Konfirmasi Kehadiran</div>
-                        <div class="card-body text-start">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="jawaban" value="Hadir"
-                                    id="jawabanYa">
-                                <label class="form-check-label" for="jawabanYa">
-                                    Ya, saya akan hadir
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="jawaban" value="Tidak Hadir"
-                                    id="jawabanTidak">
-                                <label class="form-check-label" for="jawabanTidak">
-                                    Tidak, saya tidak dapat hadir
-                                </label>
-                            </div>
-                        </div>
+
+                    <div class="mt-5 box-radio">
+                        <h5>Pastikan data di atas sudah benar, dan mohon untuk melakukan RSVP dengan memilih pada
+                            pilihan di bawah ini. Jawaban dapat diubah maksimal tanggal 21 Juli 2025</h5>
+                        <label class="labelRadio">
+                            <input type="radio" name="jawaban" value="Hadir Pemberkatan dan Resepsi">
+                            <span class="truncate">Ya, saya akan hadir pada Pemberkatan dan Resepsi</span>
+                        </label>
+                        <label class="labelRadio">
+                            <input type="radio" name="jawaban" value="Hadir Resepsi">
+                            <span class="truncate">Ya, saya akan hadir pada Resepsi saja</span>
+                        </label>
+                        <label class="labelRadio">
+                            <input type="radio" name="jawaban" value="Tidak Hadir">
+                            <span class="truncate">Tidak, saya tidak dapat hadir</span>
+                        </label>
                     </div>
                     <div class="d-grid gap-2">
-                        <button class="btn btn-primary" type="submit">Reservasi Sekarang</button>
+                        <button id="submit-rsvp-btn" type="submit">RSVP Sekarang</button>
                     </div>
                 </form>
-            </div>
-            <div class="col-6">
-                <div>
-                    <h1>WEDDING GIFT</h1>
-                </div>
-                Tanpa Mengurangi Rasa Hormat,
-
-                Bagi Anda Yang Ingin Memberikan Tanda Kasih
-
-                Untuk Mempelai, Dapat Melalui Virtual Account / E-Wallet
             </div>
         </div>
     </div>
@@ -81,15 +79,12 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 success: function(response) {
-                    // Reset textarea
+                    Swal.fire(
+                        'Berhasil!',
+                        'Terima kasih sudah melakukan konfirmasi RSVP',
+                        'success'
+                    );
                     $('#rsvp-form input[name="status"]').val(response.status);
-                    if (response.status == "Hadir") {
-                        $('#rsvp-form input[name="status"]').removeClass('bg-danger').addClass(
-                            'bg-success');
-                    } else if (response.status == "Tidak Hadir") {
-                        $('#rsvp-form input[name="status"]').removeClass('bg-success').addClass(
-                            'bg-danger');
-                    }
                 },
                 error: function(xhr) {
                     Swal.fire(

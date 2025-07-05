@@ -1,8 +1,9 @@
 @push('css')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
 @endpush
-<div class="section4">
-
+<div class="section4 mx-5">
+    <h1>Our Love Gallery </h1>
+    <h2>It's always been you. When I look at you, I see past, present and future 🤍</h2>
     <div class="masonry mb-5" id="gallery">
         <a href="{{ asset('') }}assets/img/mansory/1.jpg">
             <img src="{{ asset('') }}assets/img/mansory/1.jpg" alt="">

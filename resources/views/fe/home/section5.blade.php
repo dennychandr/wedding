@@ -16,7 +16,7 @@
         </div>
     </div>
     <hr>
-    <div class="row justify-content-center">
+    <div class="d-flex justify-content-center">
         <div class="section5-text2 ">
             By the grace and blessing of our Lord Jesus Christ, warmly invite you to witness the holy union
             of their children,

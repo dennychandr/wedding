@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('nama');
             $table->integer('jumlah_pax');
             $table->text('link_drive')->nullable();
-            $table->string('jawaban')->default('Belum Jawab');
             $table->string('status')->default('Belum Jawab');
             $table->text('keterangan')->nullable();
             $table->timestamps();

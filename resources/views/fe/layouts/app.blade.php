@@ -48,6 +48,9 @@
     <script src="{{ asset('') }}assets/js/sweetalert2.js"></script>
     <script src="{{ asset('') }}assets/js/bootstrap.min.js"></script>
     <script src="{{ asset('') }}assets/js/swiper-bundle.min.js"></script>
+    <script src="{{ asset('') }}assets/js/dayjs.min.js"></script>
+    <script src="{{ asset('') }}assets/js/duration.js"></script>
+    <script src="{{ asset('') }}assets/js/relativeTime.js"></script>
     <script>
         AOS.init();
     </script>

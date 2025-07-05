@@ -1,34 +1,31 @@
-<div class="section6">
-    <div class="parallax-section mb-5">
-        <div class="row mx-5">
-            <div class=" text-white d-flex justify-content-center gap-3 p-3">
-                <div class="d-flex flex-column align-items-center">
-                    <div id="countdown-day" class="fs-1 fw-bold">00</div>
-                    <div class="fs-5">D</div>
-                </div>
+<div class="section10">
+    <div class="pb-5 countdown-section">
+        <h1>Counting down to foverer begins now!</h1>
+        <h2>02 Agustus 2025</h2>
+        <div class="text-white d-flex justify-content-center">
+            <div class="d-flex flex-column justify-content-center align-items-center cd-margin cd-days">
+                <div id="countdown-day" class="cd-text-angka">00</div>
+                <div class="cd-text-huruf">DAYS</div>
+            </div>
 
-                <div class="d-flex flex-column align-items-center">
-                    <div id="countdown-hour" class="fs-1 fw-bold">00</div>
-                    <div class="fs-5">H</div>
-                </div>
+            <div class="d-flex flex-column justify-content-center align-items-center cd-margin cd-hours">
+                <div id="countdown-hour" class="cd-text-angka">00</div>
+                <div class="cd-text-huruf">HOURS</div>
+            </div>
 
-                <div class="d-flex flex-column align-items-center">
-                    <div id="countdown-minute" class="fs-1 fw-bold">00</div>
-                    <div class="fs-5">M</div>
-                </div>
+            <div class="d-flex flex-column justify-content-center align-items-center cd-margin cd-minutes">
+                <div id="countdown-minute" class="cd-text-angka">00</div>
+                <div class="cd-text-huruf">MINUTES</div>
+            </div>
 
-                <div class="d-flex flex-column align-items-center">
-                    <div id="countdown-second" class="fs-1 fw-bold">00</div>
-                    <div class="fs-5">S</div>
-                </div>
+            <div class="d-flex flex-column justify-content-center align-items-center cd-margin cd-seconds">
+                <div id="countdown-second" class="cd-text-angka">00</div>
+                <div class="cd-text-huruf">SECONDS</div>
             </div>
         </div>
     </div>
 </div>
 @push('js')
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/duration.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
     <script>
         // Extend with duration plugin
         dayjs.extend(dayjs_plugin_duration);

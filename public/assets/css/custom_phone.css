@@ -70,6 +70,80 @@
     margin: 100px 0;
   }
 
+
+.section6 .parallax {
+  background-image: url('/assets/img/mansory/4.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 70%;
+  color: white;
+}
+.section6 .holy-matrimony, .section6 .reception{
+  margin: 0 10px ;
+}
+
+.section6 .holy-matrimony .backdrop, .section6 .reception .backdrop{
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.section6 img{
+  border-radius: 0;
+  padding:  0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section6 .section6-text-h1{
+  font-family: 'Cinzel', cursive;
+  font-size: 2rem;
+}
+
+.section6 .section6-text-h2{
+  font-family: 'Playwrite Magyarorszag', cursive;
+  font-size: 1.5rem;
+}
+
+
+.section7 .card-outer{
+  padding: 50px 0;
+}
+
+.section7 .title {
+  font-family: 'WindSong', cursive;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section7 h3 {
+  font-family: 'Libertinus Mono', cursive;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.447);
+}
+
+.section7 .container .cards {
+  margin: 2rem 5vw;
+}
+
+  .section10 {
+    background-color: #D7BDCA;
+  }
+
+  .section10 .cd-margin{
+    margin: 0 5px;
+    height: 80px;
+    width: 80px;
+  }
+  .section10 .cd-text-angka{
+    font-size: 2rem;
+  }
+  .section10 .cd-text-huruf{
+    font-size: 0.5rem;
+  }
+
   .mobile-only { display: block; }
   .desktop-only { display: none; }
 }
