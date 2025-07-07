@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('guests', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->string('nama');
+            $table->string('jenis_tamu')->default('Pria');
             $table->integer('jumlah_pax');
             $table->text('link_drive')->nullable();
             $table->string('status')->default('Belum Jawab');

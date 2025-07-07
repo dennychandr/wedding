@@ -1,8 +1,7 @@
 {{-- <div class="scroll-progress" id="scrollProgress">0%</div> --}}
 {{-- Full Image --}}
-<hr>
 <div class="section3">
-    <h1>Story of Our Journey</h1>
+    <h1 class="title">Story of Our Journey</h1>
     <div class="timeline-container" id="timeline">
         <div class="timeline-line" id="timelineLine"></div>
 

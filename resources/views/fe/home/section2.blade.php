@@ -41,3 +41,22 @@
         </div>
     </div>
 </div>
+
+@push('js')
+    <script>
+        function supportsScrollTimeline() {
+            return CSS && CSS.supports('animation-timeline: auto');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if (supportsScrollTimeline()) {
+                console.log(123);
+
+                const stickySection = document.querySelector('.section2 .sticky-section');
+                if (stickySection) {
+                    stickySection.style.height = '400vh';
+                }
+            }
+        });
+    </script>
+@endpush

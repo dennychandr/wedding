@@ -43,6 +43,7 @@
   .section5 .section5-text2{
   width: 75%;
   font-size: 18px;
+  margin-bottom: 10px;
   }
 
   .section5 .section5-text3{
@@ -54,7 +55,7 @@
   }
 
   .section5 .first-row{
-    margin : 20vh 0;
+    margin : 5vh 0;
   }
   .section5 .logo{
     width: 50%;
@@ -67,9 +68,12 @@
   }
 
   .section5 .personal-card{
-    margin: 100px 0;
+    margin: 0 0 100px 0;
   }
 
+  .divider-mid-section5 img{
+    width: 80vw;
+  }
 
 .section6 .parallax {
   background-image: url('/assets/img/mansory/4.jpg');
@@ -77,6 +81,7 @@
   background-size: cover;
   background-position: 50% 70%;
   color: white;
+  padding-top: 25px;
 }
 .section6 .holy-matrimony, .section6 .reception{
   margin: 0 10px ;
@@ -106,7 +111,7 @@
 
 
 .section7 .card-outer{
-  padding: 50px 0;
+  padding: 50px 0 150px 0;
 }
 
 .section7 .title {
@@ -128,6 +133,76 @@
   margin: 2rem 5vw;
 }
 
+.section8 .box{
+  border: 10px solid #fff;
+  position: relative;
+  background-color: #d0e6f9;
+  top: -80vh;
+  left: 50%;
+  height: 90vh;
+  transform: translateX(-50%);
+  width: 80%;
+  z-index: 100;
+  padding: 0;
+  box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+}
+
+.section8 .bunga1{
+  position: absolute;
+  left: 85%;
+  height: auto;
+  width: 45%;
+  object-fit: cover;
+  z-index: -80;
+  padding: 0;
+}
+
+.section8 .bunga2{
+  position: absolute;
+  left: -35%;
+  top: 35%;
+  height: auto;
+  width: 50%;
+  object-fit: cover;
+  z-index: -80;
+  padding: 0;
+  transform: scaleX(-1);
+}
+
+.section8 .couple{
+  position: absolute;
+  left: 77%;
+  top: 23.8%;
+  height: auto;
+  width: 37%;
+  object-fit: cover;
+  z-index: 80;
+  padding: 0;
+  transform: scaleX(-1);
+}
+
+.truncate {
+  font-size: 12px;
+	white-space: wrap;
+	overflow: visible;
+	text-overflow: ellipsis;
+  text-align: start;
+}
+
+.section8 .input-field:focus +  .input-label,
+.section8 .input-field:read-only +  .input-label{
+  font-size: 12px;
+}
+
+.section8 .input-field {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  padding: 0.25rem 0;
+  font-size: 12px;
+}
   .section10 {
     background-color: #D7BDCA;
   }
@@ -138,11 +213,16 @@
     width: 80px;
   }
   .section10 .cd-text-angka{
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .section10 .cd-text-huruf{
-    font-size: 0.5rem;
+    font-size: 0.32rem;
   }
+
+  .divider-bottom-section10{
+    top: -20px;
+  }
+
 
   .mobile-only { display: block; }
   .desktop-only { display: none; }

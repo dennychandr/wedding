@@ -44,7 +44,9 @@
                                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
                                             <path />
                                         </svg>
-                                        <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
+                                        <img class="card__thumb"
+                                            src="{{ asset('') }}assets/img/guest/{{ $guestMessage->guest->jenis_tamu }}.png"
+                                            alt="" />
                                         <div class="card__header-text">
                                             <h3 class="card__title text-start">{{ $guestMessage->guest->nama }}
                                             </h3>

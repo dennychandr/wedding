@@ -31,9 +31,42 @@
     {{-- <!-- CSS for this page only --> --}}
     @stack('css')
     {{-- <!-- End CSS  --> --}}
+
+    <style>
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #ccc;
+            border-top-color: #3490dc;
+            border-radius: 50%;
+            animation: spin 1s infinite linear;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
     <div class="wrapper">
         {{-- @include('layouts.sidebar') --}}
 
@@ -47,17 +80,26 @@
     <script src="{{ asset('') }}assets/js/aos.js"></script>
     <script src="{{ asset('') }}assets/js/sweetalert2.js"></script>
     <script src="{{ asset('') }}assets/js/bootstrap.min.js"></script>
-    <script src="{{ asset('') }}assets/js/swiper-bundle.min.js"></script>
+    {{-- <script src="{{ asset('') }}assets/js/swiper-bundle.min.js"></script> --}}
     <script src="{{ asset('') }}assets/js/dayjs.min.js"></script>
     <script src="{{ asset('') }}assets/js/duration.js"></script>
     <script src="{{ asset('') }}assets/js/relativeTime.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
 
     {{-- <!-- js for this page only --> --}}
     @stack('js')
     {{-- <!-- ======= --> --}}
+
+    <!-- Scripts -->
+    <script>
+        window.addEventListener('load', function() {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('app').style.display = 'block';
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
