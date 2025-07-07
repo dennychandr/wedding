@@ -8,7 +8,7 @@
                 <img src="{{ asset('') }}assets/img/background/4.png" alt="">
             </div>
         </div>
-        <div class="row h-0">
+        <div class="row h-0 m-0">
             <div class="box">
                 <img src="{{ asset('') }}assets/img/section8/1.png" alt="" class="bunga1">
                 <img src="{{ asset('') }}assets/img/section8/1.png" alt="" class="bunga2">
@@ -47,7 +47,7 @@
                             <h5 class="sub-title">Pastikan data di atas sudah benar, dan mohon untuk melakukan RSVP
                                 dengan
                                 memilih pada
-                                pilihan di bawah ini. Jawaban dapat diubah maksimal tanggal 21 Juli 2025</h5>
+                                pilihan di bawah ini. Jawaban dapat diubah maksimal tanggal 15 Juli 2025</h5>
                             <label class="labelRadio">
                                 <input type="radio" name="jawaban" value="Hadir Pemberkatan dan Resepsi">
                                 <span class="truncate">Ya, saya akan hadir pada Pemberkatan dan Resepsi</span>
@@ -70,15 +70,15 @@
         </div>
     </div>
     <div class="mobile-only">
-        <div class="row">
-            <div class="col-6">
+        <div class="row m-0">
+            <div class="col-6 p-0">
                 <img src="{{ asset('') }}assets/img/background/4.png" alt="">
             </div>
-            <div class="col-6">
+            <div class="col-6 p-0">
                 <img src="{{ asset('') }}assets/img/background/4.png" alt="">
             </div>
         </div>
-        <div class="row h-0">
+        <div class="row h-0 m-0">
             <div class="box">
                 <img src="{{ asset('') }}assets/img/section8/1.png" alt="" class="bunga1">
                 <img src="{{ asset('') }}assets/img/section8/1.png" alt="" class="bunga2">
@@ -117,7 +117,7 @@
                             <h5 class="sub-title">Pastikan data di atas sudah benar, dan mohon untuk melakukan RSVP
                                 dengan
                                 memilih pada
-                                pilihan di bawah ini. Jawaban dapat diubah maksimal tanggal 21 Juli 2025</h5>
+                                pilihan di bawah ini. Jawaban dapat diubah maksimal tanggal 15 Juli 2025</h5>
                             <label class="labelRadio">
                                 <input type="radio" name="jawaban" value="Hadir Pemberkatan dan Resepsi">
                                 <span class="truncate">Ya, saya akan hadir pada Pemberkatan dan Resepsi</span>
@@ -189,7 +189,7 @@
                         'Terima kasih sudah melakukan konfirmasi RSVP',
                         'success'
                     );
-                    $('#rsvp-form input[name="status"]').val(response.status);
+                    $('#rsvp-form-mobile input[name="status"]').val(response.status);
                 },
                 error: function(xhr) {
                     Swal.fire(

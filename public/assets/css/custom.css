@@ -15,7 +15,7 @@ body{
 }
 
 .parallax-section {
-    background-image: url('/assets/img/mansory/4.jpg');
+    background-image: url('/assets/img/background/2.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 70%;
@@ -73,6 +73,7 @@ body{
   font-family: 'Libertinus Mono', cursive;
   font-size: 1.3rem;
   margin: 0;
+  animation: popupSection1 1.5s ease-out forwards;
 }
 /* ENDSECTION1 */
 
@@ -227,6 +228,10 @@ body{
 
 
 
+.section4 {
+  margin: 0 32px;
+}
+
 .section4 .title {
   font-family: 'Nanum Myeongjo', cursive;
   font-size: 4rem;
@@ -269,10 +274,11 @@ body{
 
 .section5 .section5-text-middle{
   font-family: 'Great Vibes', cursive;
-  font-size: 64px;
+  font-size: 72px;
   font-weight: 300;
   
-  color: #ffd9009c;
+  color: #000000;
+  /* text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.636); */
 }
 
 .section5 .section5-text-fullname{
@@ -302,27 +308,28 @@ body{
 }
 
 .section6 .parallax {
-  background-image: url('/assets/img/mansory/4.jpg');
+  background-image: url('/assets/img/background/2.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 70%;
-  color: white;
+  color: black;
   padding-top: 100px;
 
 }
 .section6 .holy-matrimony, .section6 .reception{
-  margin: 0 350px;
+  display: flex;
+  justify-content: center;
 }
 
 .section6 .holy-matrimony .backdrop, .section6 .reception .backdrop{
+  width: 50%;
   margin: 25px 0;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .section6 img{
-  border-radius: 10%;
-  padding: 25px 0;
+  padding: 15px 0;
   height: 50vh;
   object-fit: cover;
 }
@@ -334,6 +341,17 @@ body{
 
 .section6 .section6-text-h2{
   font-family: 'Playwrite Magyarorszag', cursive;
+  font-size: 1.5rem;
+}
+
+.section6 .section6-text-time{
+  font-family: 'Cinzel', cursive;
+  font-weight: 800;
+}
+
+.section6 .section6-text-location{
+  font-family: 'Cinzel', cursive;
+  font-weight: 800;
   font-size: 1.5rem;
 }
 
@@ -353,7 +371,27 @@ body{
   text-shadow: 2px 2px 8px rgba(25, 30, 46, 0.6);
 }
 
+.divider-mid-section6 {
+  margin: 25px 0;
+}
 
+.divider-mid-section6 img{
+  width: 250px;
+  height: auto;
+}
+
+.section6 .maps{
+  color: black;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  /* text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.598); */
+}
 
 
 
@@ -429,10 +467,16 @@ margin: 0px 50px;
 }
 
 .section7 .title {
-  font-family: 'WindSong', cursive;
+  font-family: 'Playwrite Magyarorszag', cursive;
   font-size: 64px;
   font-weight: 700;
   margin: 0;
+}
+
+.section7 h3 {
+  font-family: 'Libertinus Mono', cursive;
+  font-weight: 700;
+  margin: 10px 0 0 0;
 }
 
 .section7 #submit-wish-btn {
@@ -985,6 +1029,111 @@ input[type="radio"]:checked:after {
   }
 }
 
+.section11{
+  margin-top: 150px;
+}
+
+.section11 h2 {
+  font-family: 'Nanum Myeongjo', cursive;
+  font-size: 4rem;
+  margin: 0 0 20px 0 ;
+  font-weight: 800;
+  text-shadow: 1px 1px 2px rgba(25, 30, 46, 0.6);
+}
+
+
+.section11 .sub-title {
+  font-family: 'Allura', cursive;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0 15px;
+  text-shadow: 2px 2px 8px rgba(25, 30, 46, 0.6);
+}
+
+.section11 details {
+  width: 80%;
+  min-height: 5px;
+  max-width: 1000px;
+  padding: 25px 50px 25px 25px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all .3s;
+}
+
+.section11 details + details {
+  margin-top: 20px;
+}
+
+.section11 details[open] {
+  min-height: 50px;
+  background-color: #f6f7f8;
+  box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+.section11 details .summary-title {
+  text-align: start;
+}
+.section11 details p {
+  color: #5b5c5e;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: start;
+}
+
+.section11 summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.section11 summary:focus {
+  outline: none;
+}
+
+.section11 summary:focus::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0 5px rebeccapurple;
+}
+
+.section11 summary::-webkit-details-marker {
+  display: none
+}
+
+.section11 .control-icon {
+  fill: rebeccapurple;
+  transition: .3s ease;
+  pointer-events: none;
+}
+
+.section11 .control-icon-close {
+  display: none;
+}
+
+.section11 details[open] .control-icon-close {
+  display: initial;
+  transition: .3s ease;
+}
+
+.section11 details[open] .control-icon-expand {
+  display: none;
+}
+
+.section11 .timeline-content{
+  margin: 0 100px;
+}
+
 @media (min-width: 769px) {
   .mobile-only { display: none; }
   .desktop-only { display: block; }
@@ -997,7 +1146,7 @@ input[type="radio"]:checked:after {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  z-index: 9999;
+  z-index: 9998;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
   padding: 10px;
@@ -1009,4 +1158,10 @@ input[type="radio"]:checked:after {
   color: white;
   font-size: 20px;
   cursor: pointer;
+}
+
+.footer{
+  padding: 10px 0 0 10px;
+  font-family: 'Nanum Myeongjo', cursive;
+  background-color: #e4faff;
 }

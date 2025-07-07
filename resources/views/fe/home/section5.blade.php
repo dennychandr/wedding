@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="col-6 d-flex align-items-center justify-content-center rounded" data-aos="fade-left">
-            <img src="{{ asset('') }}assets/img/mansory/2.jpg" alt=""
+            <img src="{{ asset('') }}assets/img/background/3.jpg" alt=""
                 class="w-100 h-100 object-fit-cover rounded imgg">
         </div>
     </div>
@@ -29,7 +29,7 @@
     <div class="desktop-only" data-aos="fade">
         <div class="row mt-3">
             <div class="col-5 d-flex flex-column align-items-center  text-center">
-                <img src="{{ asset('') }}assets/img/mansory/3.jpg" alt="" class="personal-photo"
+                <img src="{{ asset('') }}assets/img/personal/denny.jpg" alt="" class="personal-photo"
                     data-aos="flip-left" data-aos-duration="1000">
             </div>
             <div class="col-2 d-flex justify-content-center align-items-center text-center">
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="col-5 d-flex flex-column  align-items-center">
-                <img src="{{ asset('') }}assets/img/mansory/7.jpg" alt="" class="personal-photo"
+                <img src="{{ asset('') }}assets/img/personal/fisia.jpg" alt="" class="personal-photo"
                     data-aos="flip-right" data-aos-duration="1000">
             </div>
         </div>
@@ -78,7 +78,7 @@
     <div class="mobile-only" data-aos="fade">
         <div class="row personal-card">
             <div class="col-12">
-                <img src="{{ asset('') }}assets/img/mansory/3.jpg" alt="" class="personal-photo"
+                <img src="{{ asset('') }}assets/img/personal/denny.jpg" alt="" class="personal-photo"
                     data-aos="flip-left" data-aos-duration="1000">
 
                 <div class="section5-text-middle mt-3">
@@ -100,7 +100,7 @@
         </div>
         <div class="row personal-card">
             <div class="col-12">
-                <img src="{{ asset('') }}assets/img/mansory/7.jpg" alt="" class="personal-photo"
+                <img src="{{ asset('') }}assets/img/personal/fisia.jpg" alt="" class="personal-photo"
                     data-aos="flip-right" data-aos-duration="1000">
 
                 <div class="section5-text-middle">

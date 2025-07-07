@@ -34,6 +34,17 @@
     font-size: 2.5rem;
   }
 
+  .section4 {
+    margin: 0 10px;
+  }
+
+  .section4 .title {
+    font-size: 2rem;
+  }
+
+  .section4 .sub-title {
+    font-size: 1rem;
+  }
 
   .section5 .section5-text1{
     font-size: 24px;
@@ -76,18 +87,20 @@
   }
 
 .section6 .parallax {
-  background-image: url('/assets/img/mansory/4.jpg');
+  background-image: url('/assets/img/background/2.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 70%;
-  color: white;
+  color: black;
   padding-top: 25px;
 }
 .section6 .holy-matrimony, .section6 .reception{
-  margin: 0 10px ;
+  display: flex;
+  justify-content: center;
 }
 
 .section6 .holy-matrimony .backdrop, .section6 .reception .backdrop{
+  width: 90%;
   margin: 15px 0;
   border-radius: 5px;
 }
@@ -109,14 +122,19 @@
   font-size: 1.5rem;
 }
 
+.section6 .maps{
+  margin: 20px;
+}
+.section6 .reception .text-inner{
+  margin-top: 20px;
+}
 
 .section7 .card-outer{
   padding: 50px 0 150px 0;
 }
 
 .section7 .title {
-  font-family: 'WindSong', cursive;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
   margin: 0;
 }
@@ -133,8 +151,31 @@
   margin: 2rem 5vw;
 }
 
+.section8 .title {
+  font-size: 2rem;
+}
+
+.section8 .sub-title{
+  font-size: 0.7rem;
+}
+.section8 h5.sub-title{
+  font-size: 0.7rem;
+}
+
+#rsvp-form-mobile{
+  padding: 0 16px;
+}
+
+.section8 #rsvp-form-mobile .input{
+  margin-top: 8px;
+}
+
+.section8 #rsvp-form-mobile .labelRadio{
+  padding: 8px 16px;
+}
+
 .section8 .box{
-  border: 10px solid #fff;
+  border: 6px solid #fff;
   position: relative;
   background-color: #d0e6f9;
   top: -80vh;
@@ -147,11 +188,24 @@
   box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
 }
 
+.section8 .layer{
+  background-color: #fff;
+  height: 96%;
+  overflow: scroll;
+  position: relative;
+  top: 2%;
+  left: 3%;
+  width: 94%;
+  padding: 15px;
+}
+
 .section8 .bunga1{
   position: absolute;
-  left: 85%;
+  top: -5%;
+  left: 70%;
   height: auto;
   width: 45%;
+  max-width: 150px;
   object-fit: cover;
   z-index: -80;
   padding: 0;
@@ -172,7 +226,7 @@
 .section8 .couple{
   position: absolute;
   left: 77%;
-  top: 23.8%;
+  top: 73%;
   height: auto;
   width: 37%;
   object-fit: cover;
@@ -224,6 +278,45 @@
   }
 
 
+
+.section11 h2 {
+  font-size: 3rem;
+}
+
+
+.section11 details .summary-title {
+  font-size: 1rem;
+}
+.section11 details p {
+  font-size: 0.8rem;
+}
+
+.section11 .sub-title {
+  font-family: 'Allura', cursive;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0 15px;
+  text-shadow: 2px 2px 8px rgba(25, 30, 46, 0.6);
+}
+
+.section11 .timeline-content{
+  font-size: 1rem;
+  margin: 0 10px;
+}
+
+.section3 .title{
+  font-size: 32px;
+}
+.timeline-content h5{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.timeline-content p{
+  font-size: 14px;
+}
+
   .mobile-only { display: block; }
   .desktop-only { display: none; }
 }
+

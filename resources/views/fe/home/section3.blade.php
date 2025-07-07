@@ -64,7 +64,7 @@
 
         <div class="timeline-item flex-row-reverse px-3" data-aos="fade-up">
             <div class="timeline-item-left d-flex justify-content-end">
-                <img src="{{ asset('') }}assets/img/mansory/4.jpg" class="timeline-img" alt="Step 4" />
+                <img src="{{ asset('') }}assets/img/background/2.jpg" class="timeline-img" alt="Step 4" />
             </div>
             <div class="timeline-dot" data-dot></div>
             <div class="timeline-date">Chapter 4</div>

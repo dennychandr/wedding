@@ -13,8 +13,8 @@
                         <a class="text-muted" href="https://wa.me/6282330097167" target="_blank">Help Center</a>
                     </li> --}}
                     <li class="list-inline-item">
-                        Developed by
-                        <a class="text-muted" href="https://adminkit.io/" target="_blank">devfinitely.id</a>
+                        Developed with ❤️ by
+                        <a class="text-muted" href="https://adminkit.io/" target="_blank">Denny & Fisia</a>
                     </li>
                 </ul>
             </div>

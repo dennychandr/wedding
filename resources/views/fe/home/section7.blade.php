@@ -91,7 +91,7 @@
                                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
                                             <path />
                                         </svg>
-                                        <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
+                                        <img class="card__thumb" src="/assets/img/guest/${response.jenis_tamu}.png" alt="" />
                                         <div class="card__header-text">
                                             <h3 class="card__title text-start">${response.nama} </h3>
                                             <span class="card__status">a few seconds ago</span>

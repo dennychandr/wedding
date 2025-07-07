@@ -44,6 +44,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
 
         .spinner {
@@ -53,6 +54,11 @@
             border-top-color: #3490dc;
             border-radius: 50%;
             animation: spin 1s infinite linear;
+        }
+
+        .progress-text {
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
         @keyframes spin {
@@ -66,6 +72,9 @@
 <body>
     <div id="loader">
         <div class="spinner"></div>
+        <br>
+        <div>Just wait a moment ❤️</div>
+        <div class="progress-text" id="progress-text">Unwrapping a lovely surprise... 0%</div>
     </div>
     <div class="wrapper">
         {{-- @include('layouts.sidebar') --}}
@@ -95,6 +104,37 @@
         window.addEventListener('load', function() {
             document.getElementById('loader').style.display = 'none';
             document.getElementById('app').style.display = 'block';
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll("img");
+            const total = images.length;
+            let loaded = 0;
+
+            const progressText = document.getElementById("progress-text");
+
+            images.forEach(img => {
+                // If image is already loaded (from cache), count it
+                if (img.complete) {
+                    incrementProgress();
+                } else {
+                    img.addEventListener('load', incrementProgress);
+                    img.addEventListener('error', incrementProgress); // Count error too
+                }
+            });
+
+            function incrementProgress() {
+                loaded++;
+                const percent = Math.round((loaded / total) * 100);
+                progressText.textContent = `Unwrapping a lovely surprise... ${percent}%`;
+
+                if (loaded === total) {
+                    setTimeout(() => {
+                        document.getElementById("loader").style.display = "none";
+                        document.getElementById("app").style.display = "block";
+                    }, 500);
+                }
+            }
         });
     </script>
     <script>

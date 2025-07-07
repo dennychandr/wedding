@@ -43,6 +43,7 @@ class HomeController extends Controller
 
         // Balikkan response dalam format JSON
         return response()->json([
+            'jenis_tamu' => $guestMessage->guest->jenis_tamu,
             'nama' => $guestMessage->guest->nama,
             'pesan' => $guestMessage->isi_pesan,
         ]);

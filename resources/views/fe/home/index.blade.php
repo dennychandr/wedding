@@ -16,7 +16,8 @@
         @include('fe.home.section4')
         @include('fe.home.section7')
         @include('fe.home.section8')
-        @include('fe.home.section1')
+        @include('fe.home.section11')
+        @include('fe.home.section12')
     </div>
     <div id="music-control">
         <button id="music-toggle">►</button>
@@ -39,10 +40,6 @@
                 toggleBtn.textContent = '❚❚';
             }
             isPlaying = !isPlaying;
-        });
-
-        window.addEventListener('load', () => {
-            audio.play();
         });
     </script>
 @endpush
