@@ -14,7 +14,6 @@
                         data-feather="users"></i> <span class="align-middle">Guest</span></a>
             </li>
 
-            <li class="sidebar-item {{ Request::is('master/pelanggan*') ? 'active' : '' }}">
             {{-- <li class="sidebar-item {{ Request::is('master/pelanggan*') ? 'active' : '' }}">
                 <a class="sidebar-link" href="{{ url('master/pelanggan') }}"><i class="align-middle"
                         data-feather="users"></i> <span class="align-middle">Pelanggan</span></a>
