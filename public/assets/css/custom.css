@@ -3,6 +3,7 @@ body{
     text-align: center;
 }
 
+
 .masonry {
     columns: 3;
     column-gap: 0.5rem;
@@ -1139,6 +1140,93 @@ input[type="radio"]:checked:after {
   .desktop-only { display: block; }
 }
 
+
+/* Start screen modal */
+#start-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 240, 245, 1);
+  z-index: 999; /* below loader */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+#start-screen.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.start-button {
+  background: #D7BDCA;
+  color: white;
+  font-size: 24px;
+  padding: 16px 32px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(234, 138, 138, 0.446);
+  margin-top: 16px;
+}
+
+/* SECTION 99 */
+.section99 .full-screen-image {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section99 .background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 10% 80%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  filter: brightness(40%); /* Apply only to image */
+  animation: zoomInSection1 3s ease-out forwards;
+}
+
+.section99 .centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+}
+
+.section99 .text-container .text-1 {
+  font-family: 'Allura', cursive;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.section99 .text-container .text-2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 7vw; /* More responsive */
+  margin: 0;
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.section99 .text-container .text-3 {
+  font-family: 'LXGW Marker Gothic', cursive;
+  font-size: 3rem;
+  margin: 0;
+  animation: popupSection1 1.5s ease-out forwards;
+}
+/* ENDSECTION1 */
+
 /* .no-animation { display: none; } */
 
 
@@ -1146,7 +1234,7 @@ input[type="radio"]:checked:after {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  z-index: 9998;
+  z-index: 998;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
   padding: 10px;

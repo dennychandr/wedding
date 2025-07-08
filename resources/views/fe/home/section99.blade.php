@@ -1,5 +1,5 @@
 {{-- Full Image --}}
-<div class="section1">
+<div class="section99">
     <div class="full-screen-image">
         <picture>
             <source srcset="{{ asset('') }}assets/img/section1/1.jpg" media="(max-width: 768px)">
@@ -7,10 +7,11 @@
         </picture>
         <div class="centered-text">
             <div class="text-container">
-                <p class="text-1" data-aos="zoom-in-up" data-aos-duration="2000">Join our Wedding</p>
                 <p class="text-2" data-aos="zoom-in-up" data-aos-duration="2000">Denny & Fisia</p>
-                <p class="text-3" data-aos="zoom-in-up" data-aos-duration="2000">02.08.25</p>
+                <p class="text-1" data-aos="zoom-in-up" data-aos-duration="2000">Dear</p>
+                <p class="text-3">{{ $guest->nama }}</p>
             </div>
+            <button class="start-button" id="start-button">Open Invitation</button>
         </div>
     </div>
 </div>

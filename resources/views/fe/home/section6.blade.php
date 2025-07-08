@@ -7,7 +7,7 @@
                 share
                 in our joy</h2>
         </div>
-        <div class="row holy-matrimony">
+        <div class="row holy-matrimony m-0">
             <div class="col-12 backdrop p-3">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-6 col-sm-12 px-5 pb-5">
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-        <div class="row reception">
+        <div class="row reception m-0">
             <div class="col-12 backdrop p-3">
                 <div class="row d-flex align-items-center ">
                     <div class="col-lg-6 col-sm-12">

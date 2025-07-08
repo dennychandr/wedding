@@ -37,8 +37,8 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             background: white;
             z-index: 9999;
             display: flex;
@@ -76,6 +76,10 @@
         <div>Just wait a moment ❤️</div>
         <div class="progress-text" id="progress-text">Unwrapping a lovely surprise... 0%</div>
     </div>
+    <!-- Start Screen -->
+    <div id="start-screen">
+        @include('fe.home.section99')
+    </div>
     <div class="wrapper">
         {{-- @include('layouts.sidebar') --}}
 
@@ -103,12 +107,13 @@
     <script>
         window.addEventListener('load', function() {
             document.getElementById('loader').style.display = 'none';
-            document.getElementById('app').style.display = 'block';
+            // document.getElementById('app').style.display = 'block';
         });
 
         document.addEventListener("DOMContentLoaded", function() {
             const images = document.querySelectorAll("img");
-            const total = images.length;
+            const total = 50 / 100 * images.length;
+
             let loaded = 0;
 
             const progressText = document.getElementById("progress-text");
@@ -125,16 +130,26 @@
 
             function incrementProgress() {
                 loaded++;
-                const percent = Math.round((loaded / total) * 100);
+                let percent = Math.round((loaded / total) * 100);
+                if (percent > 100) {
+                    percent = 100;
+                }
                 progressText.textContent = `Unwrapping a lovely surprise... ${percent}%`;
-
-                if (loaded === total) {
+                if (percent == 100) {
                     setTimeout(() => {
                         document.getElementById("loader").style.display = "none";
-                        document.getElementById("app").style.display = "block";
+                        // document.getElementById("app").style.display = "block";
                     }, 500);
                 }
             }
+        });
+
+        // Handle Start button
+        document.getElementById('start-button').addEventListener('click', function() {
+            audio.play();
+            toggleBtn.textContent = '❚❚';
+            document.getElementById('start-screen').classList.add('hidden');
+            AOS.refreshHard();
         });
     </script>
     <script>

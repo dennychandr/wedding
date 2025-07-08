@@ -94,6 +94,15 @@
   color: black;
   padding-top: 25px;
 }
+
+.section6 .title {
+  font-size: 32px;
+}
+
+.section6 .sub-title {
+  font-size: 18px;
+}
+
 .section6 .holy-matrimony, .section6 .reception{
   display: flex;
   justify-content: center;
@@ -280,7 +289,8 @@
 
 
 .section11 h2 {
-  font-size: 3rem;
+  padding: 0 16px;
+  font-size: 32px;
 }
 
 
@@ -314,6 +324,49 @@
 
 .timeline-content p{
   font-size: 14px;
+}
+
+#start-button{
+  margin-top: 16px;
+}
+
+.start-button {
+  font-size: 16px;
+  padding: 12px 20px;
+  margin-top: 16px;
+}
+
+.section99 .full-screen-image {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section99 .background-img {
+  object-position: 80% 20%;
+  object-position: center bottom;
+}
+
+.section99 .centered-text {
+  top: 43%;
+}
+
+.section99 .text-container .text-1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.section99 .text-container .text-2 {
+  font-size: 3.3rem; 
+  margin: 0;
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.section99 .text-container .text-3 {
+  font-size: 1.7rem;
+  margin: 0;
+  animation: popupSection1 1.5s ease-out forwards;
 }
 
   .mobile-only { display: block; }
