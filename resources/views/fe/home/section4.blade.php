@@ -57,4 +57,20 @@
             download: false,
         });
     </script>
+    <script>
+        const gallery = document.getElementById('gallery');
+
+        gallery.addEventListener('click', () => {
+            $.ajax({
+                type: 'POST',
+                url: "{{ route('home.a_b') }}",
+                data: {
+                    id: "{{ $guest->id }}"
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+            });
+        });
+    </script>
 @endpush

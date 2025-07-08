@@ -30,7 +30,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="wish-section mt-3">
+            <div class="wish-section mt-3 list-wish">
                 <h2 class="title mt-3">Your Kind Wishes</h2>
                 <ul class="cards" id="guest-messages">
                     @foreach ($guestMessages as $guestMessage)

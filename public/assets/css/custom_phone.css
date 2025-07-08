@@ -138,6 +138,9 @@
   margin-top: 20px;
 }
 
+.section7 .list-wish{
+  max-height: 50vh;
+}
 .section7 .card-outer{
   padding: 50px 0 150px 0;
 }

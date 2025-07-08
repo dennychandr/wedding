@@ -15,6 +15,7 @@
             </li>
 
             <li class="sidebar-item {{ Request::is('master/pelanggan*') ? 'active' : '' }}">
+            {{-- <li class="sidebar-item {{ Request::is('master/pelanggan*') ? 'active' : '' }}">
                 <a class="sidebar-link" href="{{ url('master/pelanggan') }}"><i class="align-middle"
                         data-feather="users"></i> <span class="align-middle">Pelanggan</span></a>
             </li>
@@ -82,7 +83,7 @@
             <li
                 class="sidebar-header {{ Request::is('setting*') ? 'active bg-primary rounded bg-opacity-50 fs-5' : '' }}">
                 Menu Setting
-            </li>
+            </li> --}}
 
             {{-- <li class="sidebar-item">
 					<a class="sidebar-link" href="ui-buttons.html"><i class="align-middle" data-feather="shield"></i> <span class="align-middle">Hak Akses</span></a>
@@ -92,7 +93,7 @@
 					<a class="sidebar-link" href="pages-blank.html"><i class="align-middle" data-feather="archive"></i> <span class="align-middle">Edit Stok Barang</span></a>
 				</li> --}}
 
-            <li class="sidebar-item {{ Request::is('setting/kas_masuk*') ? 'active' : '' }}">
+            {{-- <li class="sidebar-item {{ Request::is('setting/kas_masuk*') ? 'active' : '' }}">
                 <a class="sidebar-link" href="{{ url('setting/kas_masuk') }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
@@ -119,9 +120,9 @@
             <li class="sidebar-item {{ Request::is('setting/stok_opname*') ? 'active' : '' }}">
                 <a class="sidebar-link" href="{{ url('setting/stok_opname') }}"><i class="align-middle"
                         data-feather="archive"></i> <span class="align-middle">Stok Opname</span></a>
-            </li>
+            </li> --}}
 
-            <li
+            {{-- <li
                 class="sidebar-header {{ Request::is('laporan*') ? 'active bg-primary rounded bg-opacity-50 fs-5' : '' }}">
                 Menu Laporan
             </li>
@@ -172,7 +173,7 @@
                     href="http://localhost/phpmyadmin/index.php?route=/database/export&db=sales_app"><i
                         class="align-middle" data-feather="clipboard"></i> <span class="align-middle">Export
                         Data</span></a>
-            </li>
+            </li> --}}
         </ul>
 
 

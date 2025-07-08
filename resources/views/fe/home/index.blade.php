@@ -16,6 +16,7 @@
         @include('fe.home.section4')
         @include('fe.home.section7')
         @include('fe.home.section8')
+        @include('fe.home.section9')
         @include('fe.home.section11')
         @include('fe.home.section12')
     </div>

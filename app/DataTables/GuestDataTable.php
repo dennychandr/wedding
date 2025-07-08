@@ -64,6 +64,8 @@ class GuestDataTable extends DataTable
         return [
             Column::make('id')->title("ID"),
             Column::make('nama'),
+            Column::make('visit_count'),
+            Column::make('status'),
         ];
     }
 

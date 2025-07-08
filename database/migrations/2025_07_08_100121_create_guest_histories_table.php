@@ -11,15 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('guests', function (Blueprint $table) {
+        Schema::create('guest_histories', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->string('nama');
-            $table->string('jenis_tamu')->default('Pria');
-            $table->string('jenis_undangan')->default('Teman');
-            $table->integer('jumlah_pax');
-            $table->text('link_drive')->nullable();
-            $table->integer('visit_count')->default(0);
-            $table->string('status')->default('Belum Jawab');
+            $table->foreignUuid('guest_id')->index()->constrained('guests');
+            $table->string('nama')->nullable();
+            $table->timestamp('last_click')->nullable();
             $table->text('keterangan')->nullable();
             $table->timestamps();
         });
@@ -30,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('guests');
+        Schema::dropIfExists('guest_histories');
     }
 };

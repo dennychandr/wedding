@@ -77,9 +77,9 @@
         <div class="progress-text" id="progress-text">Unwrapping a lovely surprise... 0%</div>
     </div>
     <!-- Start Screen -->
-    <div id="start-screen">
+    {{-- <div id="start-screen">
         @include('fe.home.section99')
-    </div>
+    </div> --}}
     <div class="wrapper">
         {{-- @include('layouts.sidebar') --}}
 

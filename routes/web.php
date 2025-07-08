@@ -29,4 +29,6 @@ Route::middleware('auth')->group(function () {
 
 Route::post('/simpan_pesan', [HomeController::class, 'simpan_pesan'])->name('home.simpan_pesan');
 Route::post('/simpan_status', [HomeController::class, 'simpan_status'])->name('home.simpan_status');
+Route::post('/a_a', [HomeController::class, 'a_a'])->name('home.a_a');
+Route::post('/a_b', [HomeController::class, 'a_b'])->name('home.a_b');
 Route::get('/{id?}', [HomeController::class, 'index'])->name('home.index');

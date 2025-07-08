@@ -15,3 +15,23 @@
         </div>
     </div>
 </div>
+
+
+@push('js')
+    <script>
+        const openInvitation = document.getElementById('start-button');
+
+        openInvitation.addEventListener('click', () => {
+            $.ajax({
+                type: 'POST',
+                url: "{{ route('home.a_a') }}",
+                data: {
+                    id: "{{ $guest->id }}"
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+            });
+        });
+    </script>
+@endpush
