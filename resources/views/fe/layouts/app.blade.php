@@ -77,9 +77,9 @@
         <div class="progress-text" id="progress-text">Unwrapping a lovely surprise... 0%</div>
     </div>
     <!-- Start Screen -->
-    {{-- <div id="start-screen">
+    <div id="start-screen">
         @include('fe.home.section99')
-    </div> --}}
+    </div>
     <div class="wrapper">
         {{-- @include('layouts.sidebar') --}}
 
@@ -112,7 +112,7 @@
 
         document.addEventListener("DOMContentLoaded", function() {
             const images = document.querySelectorAll("img");
-            const total = 50 / 100 * images.length;
+            const total = 70 / 100 * images.length;
 
             let loaded = 0;
 

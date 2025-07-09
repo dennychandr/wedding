@@ -10,9 +10,8 @@
                                 memberikan tanda kasih untuk kami,
                                 dapat disampaikan melalui rekening yang telah kami sediakan.</h3>
                         </div>
-                        <div class="card m-3">
-                            <div class="card-body rekenings">
-                                <h2>Mempelai Pria</h2>
+                        <div class="card m-3 mb-5 h-90">
+                            <div class="card-body rekenings ">
                                 <div class="bank">BCA (Bank Central Asia)</div>
                                 <div class="account">
                                     <span id="rekeningD">1200338011</span>
@@ -20,18 +19,6 @@
                                 </div>
                                 <div class="copied" id="copiedTextD">Nomor rekening disalin!</div>
                                 <div class="name">Denny Chandra Wijaya</div>
-                            </div>
-                        </div>
-                        <div class="card m-3">
-                            <div class="card-body rekenings">
-                                <h2>Mempelai Wanita</h2>
-                                <div class="bank">BCA (Bank Central Asia)</div>
-                                <div class="account">
-                                    <span id="rekeningF">1200338011</span>
-                                    <i class="fa fa-files-o" onclick="copyRekeningF()" title="Salin"></i>
-                                </div>
-                                <div class="copied" id="copiedTextF">Nomor rekening disalin!</div>
-                                <div class="name">Fisia Niti Atmadja</div>
                             </div>
                         </div>
                     </div>

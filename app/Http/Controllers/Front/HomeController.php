@@ -21,7 +21,7 @@ class HomeController extends Controller
         if (!$guest) {
             abort(403, "DATA UNDANGAN TIDAK DITEMUKAN, 
             PASTIKAN LINK YANG DIMASUKKAN BENAR.
-            MOHON HUBUNGI DENNY.");
+            MOHON HUBUNGI DENNY/FISIA.");
         }
 
         $guestMessages = GuestMessage::with('guest')

@@ -79,19 +79,22 @@
             akan berlangsung di area berumput.</p>
     </details>
 
-    <details>
-        <summary>
-            <div class="summary-title"> 5. Apa akomodasi disediakan?</div>
-            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
-            </svg>
-            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
-            </svg>
-        </summary>
-        <p>Tanpa mengurangi rasa hormat, akomodasi tdk termasuk. Namun jika teman2 butuh bbrp saran, boleh PC yaa utk
-            bbrp rekomendasi hotel area sana ☺️</p>
-    </details>
+    @if ($guest->jenis_undangan != 'Orang Tua')
+        <details>
+            <summary>
+                <div class="summary-title"> 5. Apa akomodasi disediakan?</div>
+                <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                </svg>
+                <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                </svg>
+            </summary>
+            <p>Tanpa mengurangi rasa hormat, akomodasi tdk termasuk. Namun jika teman2 butuh bbrp saran, boleh PC yaa
+                utk
+                bbrp rekomendasi hotel area sana ☺️</p>
+        </details>
+    @endif
 
     <h5 class="sub-title mt-3">if there are any other questions, please fell free to ask us privately 🥰</h5>
     <div class="divider-mid-section5">

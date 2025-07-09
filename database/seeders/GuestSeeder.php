@@ -196,7 +196,7 @@ class GuestSeeder extends Seeder
                 "link_drive" => "https://drive.google.com/drive/folders/1J3ybcggsEYnFGAPNggBjzvHQEkRx1IV1?usp=sharing",
             ],
             [
-                "nama" => "Lucky",
+                "nama" => "Lucky Tanjung",
                 "jumlah_pax" => 1,
                 "jenis_tamu" => "Pria",
                 "jenis_undangan" => "Teman",
@@ -209,7 +209,68 @@ class GuestSeeder extends Seeder
                 "jenis_undangan" => "Teman",
                 "link_drive" => "https://drive.google.com/drive/folders/1tlEPLEdiJjzb1JhJkEg9scZxO9i7KNGj?usp=sharing",
             ],
+            [
+                "nama" => "Ryan Chandra",
+                "jumlah_pax" => 1,
+                "jenis_tamu" => "Pria",
+                "jenis_undangan" => "Teman",
+                "link_drive" => "https://drive.google.com/drive/folders/1sHdriVorYDENCRBA9WAx3dt7_mhhDjC0?usp=sharing",
+            ],
+            [
+                "nama" => "Hartono",
+                "jumlah_pax" => 1,
+                "jenis_tamu" => "Pria",
+                "jenis_undangan" => "Teman",
+                "link_drive" => "https://drive.google.com/drive/folders/1ICk4xx5I1M6JmCulDt-dh7a3znpGrpn0?usp=sharing",
+            ],
+            [
+                "nama" => "Budhi",
+                "jumlah_pax" => 1,
+                "jenis_tamu" => "Pria",
+                "jenis_undangan" => "Teman",
+                "link_drive" => "https://drive.google.com/drive/folders/1h3nlfqw2ROkQoDVgVMDuoqaIC7jaXab5?usp=sharing",
+            ],
+            [
+                "nama" => "Handy",
+                "jumlah_pax" => 1,
+                "jenis_tamu" => "Pria",
+                "jenis_undangan" => "Teman",
+                "link_drive" => "https://drive.google.com/drive/folders/1F3wjKwjheLrJqZ2aA4HHEcU048AJBdZf?usp=sharing",
+            ],
+            [
+                "nama" => "Rubby",
+                "jumlah_pax" => 1,
+                "jenis_tamu" => "Pria",
+                "jenis_undangan" => "Teman",
+                "link_drive" => "https://drive.google.com/drive/folders/1-iIGfv5GWyfepL5VnvA2ymZM020PSfQ-?usp=sharing",
+            ],
+            [
+                "nama" => "Steven Eduartanto",
+                "jumlah_pax" => 1,
+                "jenis_tamu" => "Pria",
+                "jenis_undangan" => "Teman",
+                "link_drive" => "https://drive.google.com/drive/folders/1Fx5xtubyXq_zP6UmxRoJHc6ubtaDMBW1?usp=sharing",
+            ],
 
+
+
+
+
+
+            [
+                "nama" => "Denny & Liliyani",
+                "jumlah_pax" => 2,
+                "jenis_undangan" => "Teman",
+                "jenis_tamu" => "Pasangan",
+                "link_drive" => "https://drive.google.com/drive/folders/1Si84av5s4ah8PR1vOrrWsnjkA-VN6-Hu?usp=sharing",
+            ],
+            [
+                "nama" => "Andreas & Silvia",
+                "jumlah_pax" => 2,
+                "jenis_undangan" => "Teman",
+                "jenis_tamu" => "Pasangan",
+                "link_drive" => "https://drive.google.com/drive/folders/1hP8FshgnABCjMQ4s4wYD96CAYIp_My4q?usp=sharing",
+            ],
 
 
             [
@@ -217,14 +278,49 @@ class GuestSeeder extends Seeder
                 "jumlah_pax" => 2,
                 "jenis_tamu" => "Pasangan",
                 "jenis_undangan" => "Orang Tua",
-                "link_drive" => "",
+                "link_drive" => "https://drive.google.com/drive/folders/1yTMMsZ9F5-eUFEq5SaB4C-JvU31rjn0A?usp=sharing",
             ],
             [
                 "nama" => "Hari Pranoto",
                 "jumlah_pax" => 2,
                 "jenis_tamu" => "Pasangan",
                 "jenis_undangan" => "Orang Tua",
-                "link_drive" => "",
+                "link_drive" => "https://drive.google.com/drive/folders/1eyfp5BbCyd-JgB3755Dj-3HWzsnkQVrc?usp=sharing",
+            ],
+            [
+                "nama" => "Aying",
+                "jumlah_pax" => 2,
+                "jenis_tamu" => "Pasangan",
+                "jenis_undangan" => "Orang Tua",
+                "link_drive" => "https://drive.google.com/drive/folders/1rzdbyjp2z5845Qwq-U_K-vuM77VLbshJ?usp=sharing",
+            ],
+            [
+                "nama" => "Ango",
+                "jumlah_pax" => 2,
+                "jenis_tamu" => "Pasangan",
+                "jenis_undangan" => "Orang Tua",
+                "link_drive" => "https://drive.google.com/drive/folders/18XKtVIeUdLvOEB3bV6KK5a8OmdE5EJA4?usp=sharing",
+            ],
+            [
+                "nama" => "Heni",
+                "jumlah_pax" => 2,
+                "jenis_tamu" => "Pasangan",
+                "jenis_undangan" => "Orang Tua",
+                "link_drive" => "https://drive.google.com/drive/folders/1XmaC-fmNnrsJa6LdDmSca84TZFr7-M_v?usp=sharing",
+            ],
+            [
+                "nama" => "Grace",
+                "jumlah_pax" => 2,
+                "jenis_tamu" => "Pasangan",
+                "jenis_undangan" => "Orang Tua",
+                "link_drive" => "https://drive.google.com/drive/folders/1GG7kB6fqMEXnkIUWRf-E0eYP-0VSJ9xr?usp=sharing",
+            ],
+            [
+                "nama" => "Len",
+                "jumlah_pax" => 2,
+                "jenis_tamu" => "Pasangan",
+                "jenis_undangan" => "Orang Tua",
+                "link_drive" => "https://drive.google.com/drive/folders/1fGbORhGApQqYB35kQ-IvjR28d_gnUH3U?usp=sharing",
             ]
         ];
 
@@ -234,6 +330,7 @@ class GuestSeeder extends Seeder
                 'nama' => $guest['nama'],
                 'jumlah_pax' => $guest['jumlah_pax'],
                 'jenis_tamu' => $guest['jenis_tamu'],
+                'jenis_undangan' => $guest['jenis_undangan'],
                 'link_drive' => $guest['link_drive'],
                 'status' => "Belum Reservasi"
             ]);
