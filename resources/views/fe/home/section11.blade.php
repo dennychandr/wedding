@@ -118,4 +118,10 @@
         <p>* Hanya bagi yg berhalangan hadir namun ingin memberikan tanda kasih, dapat diberikan melalui nomor rekening
             atau QR di wedding gift section pada undangan online ini</p>
     </div>
+
+    <div class="timeline-content mb-3">
+        <p>* Mohon maaf apabila ada kesalahan dalam penulisan nama di undangan atau terdapat kata-kata yang kurang
+            berkenan. Apabila ada data yang tidak sesuai dapat langsung menghubungi kami, baik kesalahan nama, jumlah
+            pax atau apapun yang kurang tepat.</p>
+    </div>
 </div>

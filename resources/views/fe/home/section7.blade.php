@@ -50,8 +50,8 @@
                                         <div class="card__header-text">
                                             <h3 class="card__title text-start">{{ $guestMessage->guest->nama }}
                                             </h3>
-                                            <span class="card__status">
-                                                {{ \Carbon\Carbon::parse($guestMessage->created_at)->diffForHumans() }}</span>
+                                            {{-- <span class="card__status">
+                                                {{ \Carbon\Carbon::parse($guestMessage->created_at)->diffForHumans() }}</span> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -94,14 +94,13 @@
                                         <img class="card__thumb" src="/assets/img/guest/${response.jenis_tamu}.png" alt="" />
                                         <div class="card__header-text">
                                             <h3 class="card__title text-start">${response.nama} </h3>
-                                            <span class="card__status">a few seconds ago</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
                 `);
-
+                    //       <span class="card__status">a few seconds ago</span>
                     // Reset textarea
                     $('#guest-form textarea[name="isi_pesan"]').val('');
                 },

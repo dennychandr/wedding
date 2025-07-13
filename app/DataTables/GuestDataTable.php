@@ -21,7 +21,28 @@ class GuestDataTable extends DataTable
      */
     public function dataTable(QueryBuilder $query): EloquentDataTable
     {
-        return (new EloquentDataTable($query));
+        return (new EloquentDataTable($query))
+            ->addColumn('action', function ($row) {
+                $action = '';
+                $link = 'https://wa.me/6282330097167?text=Dear '
+                    . rawurlencode($row->nama)
+                    . '%0A'
+                    . rawurlencode('With the utmost respect and joy in our hearts, we kindly invite you to be a part of one of the most special moments in our lives — our wedding celebration.')
+                    . '%0A%0A'
+                    . rawurlencode('Please visit the link below for the full details of our event: ')
+                    . '%0Ahttps://wedding.devfinitely.id/' . $row->id
+                    . '%0A%0A'
+                    . rawurlencode('It would be a great honor for us to have you present and to receive your blessings on this joyful occasion. Kindly help us by confirming your attendance via the link as soon as possible — we’re excited to celebrate with you!')
+                    . '%0A'
+                    . rawurlencode('Please note that this link is exclusively valid for the name addressed in this invitation. We kindly ask that you do not share it with others.')
+                    . '%0A%0A'
+                    . rawurlencode('With Love,')
+                    . '%0A'
+                    . rawurlencode('Denny & Fisia');
+
+                $action .= "<a href='$link' class='btn btn-primary btn-sm action' target='_blank'>Kirim Pesan</a>";
+                return $action;
+            });;
         // ->addColumn('action', 'guest.action')
         // ->setRowId('id');
     }
@@ -68,6 +89,7 @@ class GuestDataTable extends DataTable
             Column::make('jenis_tamu'),
             Column::make('visit_count'),
             Column::make('status'),
+            Column::computed('action'),
         ];
     }
 
