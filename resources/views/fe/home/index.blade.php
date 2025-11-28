@@ -16,7 +16,11 @@
         @include('fe.home.section4')
         @include('fe.home.section7')
         @include('fe.home.section8')
-        @include('fe.home.section9')
+        @if ($guest->link_drive)
+            @include('fe.home.section9')
+        @else
+            <div style="margin-top: 125px"></div>
+        @endif
         @include('fe.home.section11')
         @include('fe.home.section12')
     </div>
